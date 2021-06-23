@@ -1,0 +1,45 @@
+
+Showing logs for build [32mmy-jenkins-x-environment-k8s-al-kdhmp-1[0m stage [32mpr-checks[0m and container [32mcredential-initializer[0m
+{"level":"info","ts":1624434121.2711668,"caller":"creds-init/main.go:44","msg":"Credentials initialized."}
+
+Showing logs for build [32mmy-jenkins-x-environment-k8s-al-kdhmp-1[0m stage [32mpr-checks[0m and container [32mworking-dir-initializer[0m
+
+Showing logs for build [32mmy-jenkins-x-environment-k8s-al-kdhmp-1[0m stage [32mpr-checks[0m and container [32mplace-tools[0m
+
+Showing logs for build [32mmy-jenkins-x-environment-k8s-al-kdhmp-1[0m stage [32mpr-checks[0m and container [32mstep-git-source-workspace-f4qfb[0m
+{"level":"info","ts":1624434127.5152154,"caller":"git/git.go:105","msg":"Successfully cloned https://github.com/my-jenkins-x/environment-k8s-alpha-dev.git @ master in path /workspace/source"}
+{"level":"warn","ts":1624434127.5153453,"caller":"git/git.go:152","msg":"Unexpected error: creating symlink: symlink /tekton/home/.ssh /root/.ssh: file exists"}
+{"level":"info","ts":1624434127.5599935,"caller":"git/git.go:133","msg":"Successfully initialized and updated submodules in path /workspace/source"}
+
+Showing logs for build [32mmy-jenkins-x-environment-k8s-al-kdhmp-1[0m stage [32mpr-checks[0m and container [32mstep-setup-builder-home[0m
+
+Showing logs for build [32mmy-jenkins-x-environment-k8s-al-kdhmp-1[0m stage [32mpr-checks[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:a7d24f7c47d0db9d0a4c6b9dacd9d58cdd30b097,1:dcd67044a438bc39dc8aefbf1547b4baf8a99cbc
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git fetch origin --unshallow dcd67044a438bc39dc8aefbf1547b4baf8a99cbc: a7d24f7c47d0db9d0a4c6b9dacd9d58cdd30b097:
+DEBUG: ran git fetch --unshallow origin dcd67044a438bc39dc8aefbf1547b4baf8a99cbc: a7d24f7c47d0db9d0a4c6b9dacd9d58cdd30b097: in 
+DEBUG: JX_LOG_LEVEL=error LC_ALL=C git branch
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git checkout master
+DEBUG: ran git checkout master in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git reset --hard a7d24f7c47d0db9d0a4c6b9dacd9d58cdd30b097
+DEBUG: ran git reset --hard a7d24f7c47d0db9d0a4c6b9dacd9d58cdd30b097 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git clean -fd .
+DEBUG: ran clean --force -d . in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git merge dcd67044a438bc39dc8aefbf1547b4baf8a99cbc
+DEBUG: ran git merge dcd67044a438bc39dc8aefbf1547b4baf8a99cbc in 
+DEBUG: JX_LOG_LEVEL=error LC_ALL=C git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e a7d24f7c47d0db9d0a4c6b9dacd9d58cdd30b097..HEAD
+Merged SHA dcd67044a438bc39dc8aefbf1547b4baf8a99cbc with commit message 'chore(deps): bump https://github.com/tgj1013/**-tutorial.git' into base branch master
+
+Showing logs for build [32mmy-jenkins-x-environment-k8s-al-kdhmp-1[0m stage [32mpr-checks[0m and container [32mstep-verify-parameters[0m
+error: resolve the secrets URIs: replacing secrets URIs: replacing vault paths in *****User:
+  password: local:k8s-alpha/*****User:password
+  username: *****
+enableDocker: false
+pipelineUser:
+  email: *******@gmail.com
+  token: local:k8s-alpha/pipelineUser:token
+  username: *******
+prow:
+  hmacToken: local:k8s-alpha/prow:hmacToken
+: unable to find "password" in secret at "k8s-alpha/*****User"
+[31m
+Pipeline failed on stage 'pr-checks' : container 'step-verify-parameters'. The execution of the pipeline has stopped.[0m
