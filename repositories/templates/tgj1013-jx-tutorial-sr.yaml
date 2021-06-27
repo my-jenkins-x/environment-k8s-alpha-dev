@@ -1,0 +1,48 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: tgj1013
+    provider: github
+    repository: jx-tutorial
+  managedFields:
+  - apiVersion: jenkins.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:labels:
+          .: {}
+          f:owner: {}
+          f:provider: {}
+          f:repository: {}
+      f:spec:
+        .: {}
+        f:description: {}
+        f:httpCloneURL: {}
+        f:org: {}
+        f:provider: {}
+        f:providerKind: {}
+        f:providerName: {}
+        f:repo: {}
+        f:scheduler:
+          .: {}
+          f:kind: {}
+          f:name: {}
+        f:url: {}
+    manager: jx
+    operation: Update
+    time: "2021-06-23T07:40:16Z"
+  name: tgj1013-jx-tutorial
+spec:
+  description: Imported application for tgj1013/jx-tutorial
+  httpCloneURL: https://github.com/tgj1013/jx-tutorial.git
+  org: tgj1013
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx-tutorial
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/tgj1013/jx-tutorial.git
