@@ -1,0 +1,48 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: tgj1013
+    provider: github
+    repository: sample-golang-http
+  managedFields:
+  - apiVersion: jenkins.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:labels:
+          .: {}
+          f:owner: {}
+          f:provider: {}
+          f:repository: {}
+      f:spec:
+        .: {}
+        f:description: {}
+        f:httpCloneURL: {}
+        f:org: {}
+        f:provider: {}
+        f:providerKind: {}
+        f:providerName: {}
+        f:repo: {}
+        f:scheduler:
+          .: {}
+          f:kind: {}
+          f:name: {}
+        f:url: {}
+    manager: jx
+    operation: Update
+    time: "2021-06-27T16:22:09Z"
+  name: tgj1013-sample-golang-http
+spec:
+  description: Imported application for tgj1013/sample-golang-http
+  httpCloneURL: https://github.com/tgj1013/sample-golang-http.git
+  org: tgj1013
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: sample-golang-http
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/tgj1013/sample-golang-http.git

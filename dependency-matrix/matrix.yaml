@@ -1,7 +1,7 @@
 dependencies:
 - host: github.com
   owner: tgj1013
-  repo: jx-tutorial
-  url: https://github.com/tgj1013/jx-tutorial.git
+  repo: sample-golang-http
+  url: https://github.com/tgj1013/sample-golang-http.git
   version: ""
   versionURL: ""
